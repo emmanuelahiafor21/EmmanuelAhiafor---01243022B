@@ -6,25 +6,26 @@
 int main(int argc, char *argv[]) {
 		//Declare variable//
 	float temperature;
-	//Prompt user to input Value for temperature//
-	printf("Enter your body temperature(°C):");
+	//Prompt user to input temperature reading//
+	printf("Enter your body temperature in Â°C:");
 	scanf("%f",&temperature);
-	printf("Your body temperature is:%f°C\n",temperature);
-	//Using conditional statement if...else//
+	//Using conditional statement, if...else//
 	if(temperature < 35.0){
-		printf("Your temperature is low\n");
-		printf("You are not well\n");
-		printf("Medical attention needed\n");
+		printf("\n --- Medical Report ---\n");
+		printf("Your body temperature is low,\n");
+		printf("You need immediate medical attention, Thank you.\n");
 		
 	}else if( temperature<=37.5){
-			printf("Your body temperature is normal\n");
-			printf("No medical attention needed\n");
+		printf("\n --- Medical Report ---\n");
+			printf("Your body temperature is normal.\n");
+			printf("You're in a good condition, Thank you.\n");
 		}else{
-			printf("Your temperature is high\n");
-			printf("You are not well\n");
-			printf("Medical attention needed\n");
+			printf("\n --- Medical Report ---\n");
+			printf("Your body temperature is high.\n");
+			printf("You need immediate medical attention, Thank you.\n");
 		
 }
 
 	return 0;
 }
+
