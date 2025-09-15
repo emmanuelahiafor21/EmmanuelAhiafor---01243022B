@@ -31,3 +31,4 @@ printf("Heart rate:%d bpm\n",heart_rate);
 printf("Blood pressure:%d/%d mmHg\n",systolic,diastolic);
 	return 0;
 }
+
