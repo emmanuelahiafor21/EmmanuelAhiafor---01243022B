@@ -11,16 +11,15 @@ int main(int argc, char *argv[]) {
 	float average_systolic_bp;          
     
     //Display program title and instructions//
-    printf("Systolic Blood Pressure Machine \n");
-    printf("This program will be calculating the total and average of 4 systolic BP readings in mmHg.\n");
-    
-    //Using for loop to prompt for 4 systolic BP readings//
+    printf("\n ---Systolic Blood Pressure Machine --- \n");
+    printf("Total and Average Calculator of 4 systolic readings\n");
+    //Using for loop to prompt the user for 4 systolic BP readings//
     //Loop runs 4 times (from i = 1 to i <= 4)//
     int i;
 	for(i = 1; i <= 4; i++) 
 	{
         //Prompt user for the user to input a value with clear labeling//
-        printf("Enter systolic BP reading #%d: ", i);
+        printf("Please enter systolic BP reading #%d: ", i);
         
         //Read the entered input for this reading//
         scanf("%d", &systolic_bp);
@@ -38,7 +37,6 @@ int main(int argc, char *argv[]) {
     /*Display results with  clear labels*/
     printf("\n Results:\n");
     printf("Total of 4 systolic BP readings: %d mmHg\n", total_systolic_bp);
-    printf("Average systolic BP: %.2f mmHg\n", average_systolic_bp);
+    printf("Average of 4 systolic BP readings: %.2f mmHg\n", average_systolic_bp);
 
 	return 0;
-}
