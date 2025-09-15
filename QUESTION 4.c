@@ -40,3 +40,5 @@ int main(int argc, char *argv[]) {
     printf("Average of 4 systolic BP readings: %.2f mmHg\n", average_systolic_bp);
 
 	return 0;
+}
+
